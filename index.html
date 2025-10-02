@@ -1,107 +1,121 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Línea del tiempo</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
+<DOCKTYPE html>
+<html>
+<head>
+    <title>El árbol genealógico de los lenguajes de marcas</title>
+    <meta charset = "UTF-8">
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0.856), rgba(255, 0, 0, 0.9) );
+        }
+        .text-container{
+            display: none;
+            
+        }
+  
+        .card{
+            border: 3px black solid;
+            border-radius: 5px;
+            margin: 5rem ;
+            padding: 1rem;
+            background-color: coral;
+        }
 
-  <body style="padding: 20px; margin: 5px; background-color: #eae6ca;">
-    <main class="content">
-      <h1 style="text-align: center;">Línea del Tiempo de los Lenguajes de Marcas</h1>
-      <div class="card-container">
-        <!-- SGML -->
-        <div class="card">
-          <a href="#" target="_blank"><h2 style="color: black;">SGML</h2></a>
-          <div class="text-container">
-            <p class="text-content">
-              El lenguaje SGML (Standard Generalized Markup Languages), deriva de GML, propuesto por IBM, un lenguaje que permitió a los usuarios trabajar en estilos de formato estandarizados para documentos electrónicos. SGML surgió para resolver problemas de interoperabilidad y gestión de información estructurada en distintos sistemas y plataformas, además de especificar las reglas para los elementos de marcado. 
-              El lenguaje SGML es una forma más sencilla para escribir documentos usando etiquetas que ayudan a organizarlos. Gracias a esto, los archivos se pueden leer fácilmente tanto por personas como por ordenadores. 
-            </p>
-          </div>
-          <button class="read-more-btn" style="color: #1d1e33;">Ver más</button>
+        h3{
+            text-align:center;
+            font-size: 25px;
+            text-shadow: 3px 7px 8px rgb(0, 0, 0);
+        }
+        /*Transicion*/
+
+        .card:hover .text-container{
+            display: block;
+            
+        }
+        .card:hover{
+            box-shadow: 5px 5px 7px rgb(0, 0, 0);
+
+        }
+    </style>
+</head>
+<body>
+
+    <!--SGML-->
+    <div class="card">
+        <a><h3>SGML</h3></a>
+        <div class="text-container">
+          <p class="text-content">
+
+        El lenguaje SGML (Standard Generalized Markup Languages), deriva de GML, propuesto por IBM, un lenguaje que permitió a los usuarios trabajar en estilos de formato estandarizados para documentos electrónicos. SGML surgió para resolver problemas de interoperabilidad y gestión de información estructurada en distintos sistemas y plataformas, además de especificar las reglas para los elementos de marcado. 
+    <br>
+        El lenguaje SGML es una forma más sencilla para escribir documentos usando etiquetas que ayudan a organizarlos. Gracias a esto, los archivos se pueden leer fácilmente tanto por personas como por ordenadores. 
+    </p>
         </div>
-
-        <!-- HTML -->
-        <div class="card">
-          <a href="#" target="_blank"><h2 style="color: black;">HTML</h2></a>
-          <div class="text-container">
-            <p class="text-content">
-              Tim Bernes Lee utilió SGML para crear un nuevo lenguaje de etiquetas que llamó Hypertext Makrkup Language, conocido como HTML. Este lenguaje fue desarrollado para estructurar y organizar el texto de manera legible mediante el uso de las etiquetas. HTML ofrece gran adaptabilidad,porque permite que el contenido web se visualice correctamente desde cualquier dispositivo. 
-              HTML se usa comúnmente combinando CSS y JavaScript. Además, su uso principal puede ser para desarrollo de páginas web, para navegar por Internet, para diseños responsivos, etc. 
-            </p>
-          </div>
-          <button class="read-more-btn" style="color: #1d1e33;">Ver más</button>
         </div>
+     <br>
+    <br>
+    <!--HTML-->
+   <div class="card">
+        <a><h3>HTML</h3></a>
+        <div class="text-container">
+          <p class="text-content">
 
-        <!-- XML -->
-        <div class="card">
-          <a href="#" target="_blank"><h2 style="color: black;">XML</h2></a>
-          <div class="text-container">
-            <p class="text-content">
-              El lenguaje XML (eXtensible Markup Language), que permite almacenar, transmitir y reconstruir datos arbitrarios entre ordenadores (importar y exportar archivos), de manera sencilla y generalizada pero con una sintaxis más estricta; Fue creado por un comité del W3C o World Wide Web Consortium en 1996. Y surgió por la necesidad de un formato de lenguaje de marcado que fuera más flexible y personalizable que el SGML.  
-              El lenguaje XML fue publicado oficialmente como una recomendación del W3C el 10 de febrero de 1998 y desde entonces es utilizado en diversas industrias y aplicaciones. 
-            </p>
-          </div>
-          <button class="read-more-btn" style="color: #1d1e33;">Ver más</button>
+        Tim Bernes Lee utilió SGML para crear un nuevo lenguaje de etiquetas que llamó Hypertext Makrkup Language, conocido como HTML. Este lenguaje fue desarrollado para estructurar y organizar el texto de manera legible mediante el uso de las etiquetas. HTML ofrece gran adaptabilidad,porque permite que el contenido web se visualice correctamente desde cualquier dispositivo.  
+    <br>
+        HTML se usa comúnmente combinando CSS y JavaScript. Además, su uso principal puede ser para desarrollo de páginas web, para navegar por Internet, para diseños responsivos, etc.  
+    </p>
         </div>
-
-        <!-- JSON -->
-        <div class="card">
-          <a href="#" target="_blank"><h2 style="color: black;">JSON</h2></a>
-          <div class="text-container">
-            <p class="text-content">
-              JSON o JavaScript Object Notation creado por Douglas Crockford en los principios de la década de los 2000, procedente de JavaScript y actualmente compite con XML, porque también se especializa en importar y exportar archivos; Aunque no se considere un lenguaje de marcas, ya que guarda el texto como datos o metadatos, y no utiliza ninguna etiqueta.  
-            </p>
-          </div>
-          <button class="read-more-btn" style="color: #1d1e33;">Ver más</button>
         </div>
-
-          <!-- MARKDOWN -->
+     <br>
+    <br>
+    <!--XML-->
         <div class="card">
-          <a href="#" target="_blank"><h2 style="color: black;">MARKDOWN</h2></a>
-          <div class="text-container">
-            <p class="text-content">
-              JSON o JavaScript Object Notation creado por Douglas Crockford en los principios de la década de los 2000, procedente de JavaScript y actualmente compite con XML, porque también se especializa en importar y exportar archivos; Aunque no se considere un lenguaje de marcas, ya que guarda el texto como datos o metadatos, y no utiliza ninguna etiqueta.  
-            </p>
-          </div>
-          <button class="read-more-btn" style="color: #1d1e33;">Ver más</button>
-        </div>
+        <a><h3>XML</h3></a>
+        <div class="text-container">
+          <p class="text-content">
 
-        <!-- RTF -->
+        El lenguaje XML (eXtensible Markup Language), que permite almacenar, transmitir y reconstruir datos arbitrarios entre ordenadores (importar y exportar archivos), de manera sencilla y generalizada pero con una sintaxis más estricta; Fue creado por un comité del W3C o World Wide Web Consortium en 1996. Y surgió por la necesidad de un formato de lenguaje de marcado que fuera más flexible y personalizable que el SGML. 
+    <br>
+        El lenguaje XML fue publicado oficialmente como una recomendación del W3C el 10 de febrero de 1998 y desde entonces es utilizado en diversas industrias y aplicaciones.     </p>
+        </div>
+        </div>
+     <br>
+    <br>
+        <!--JSON-->
         <div class="card">
-          <a href="#" target="_blank"><h2 style="color: black;">RTF</h2></a>
-          <div class="text-container">
-            <p class="text-content">
-              El Rich Text Format es un formato de archivo informático desarrollado por Microsoft en 1987 para el intercambio de documentos multiplataforma. La mayoría de los procesadores de texto pueden leer y escribir documentos RTF. No debe confundirse con el enriched text o su predecesor Rich Text, que son especificaciones completamente diferentes.  
-              Richard Brodie, Charles Simonyi, y David Luebbert, miembros del equipo de desarrollo de Microsoft Word, desarrollaron el RTF original a mediados y finales de los 80. El primer lector y escritor de RTF enviado en 1987 como parte de Microsoft Word 3.0 para Macintosh, que implementó la especificación RTF versión 1.0. Todas las versiones posteriores de Microsoft Word para Macintosh, así como todas las versiones de Windows, pueden leer y escribir en formato RTF.   
-            </p>
-          </div>
-          <button class="read-more-btn" style="color: #1d1e33;">Ver más</button>
+        <a><h3>JSON</h3></a>
+        <div class="text-container">
+          <p class="text-content">
+
+            JSON o JavaScript Object Notation creado por Douglas Crockford en los principios de la década de los 2000, procedente de JavaScript y actualmente compite con XML, porque también se especializa en importar y exportar archivos; Aunque no se considere un lenguaje de marcas, ya que guarda el texto como datos o metadatos, y no utiliza ninguna etiqueta.</p>
         </div>
-      </div>
-    </main>
+        </div>
+     <br>
+    <br>
+        <!--MarkDown-->
+        <div class="card">
+        <a><h3>MarkDown</h3></a>
+        <div class="text-container">
+          <p class="text-content">
 
+        Markdown fue creado por John Gruber y Aaron Swartz en 2004. Originalmente buscaba ofecer una forma de convertir documentos escritos en texto plano para convertirlos fácilmente a HTML. En 2006 apareció una especificación más formal llamada “Markdown Extra”, agregando características adicionales, como tablas y definiciones de términos. Nació no como un sustituto de HTML, sino como una versión más simplificada de este, por lo que se usa para crear documentos que se pueden transformar en otros formatos, como HTML. </p>
+        </div>
+        </div>
+     <br>
+    <br>
+        <!--RFT-->
+        <div class="card">
+        <a><h3>RFT</h3></a>
+        <div class="text-container">
+          <p class="text-content">
 
-    <!--JAVASCRIPT PARA QUE FUNCIONE LA FUNCIÓN DE "VER MAS"-->
+        
 
-    <script>
-    const buttons = document.querySelectorAll(".read-more-btn");
-
-    buttons.forEach(button => {
-      button.addEventListener("click", () => {
-        const text = button.previousElementSibling.querySelector(".text-content");
-
-        text.classList.toggle("expanded");
-
-          if (text.classList.contains("expanded")) {
-            button.textContent = "Ver menos";
-          } else {
-            button.textContent = "Ver más";
-          }
-        });
-      });
-    </script>
-  </body>
+        El Rich Text Format es un formato de archivo informático desarrollado por Microsoft en 1987 para el intercambio de documentos multiplataforma. La mayoría de los procesadores de texto pueden leer y escribir documentos RTF. No debe confundirse con el enriched text o su predecesor Rich Text, que son especificaciones completamente diferentes.  
+    <br>
+        Richard Brodie, Charles Simonyi, y David Luebbert, miembros del equipo de desarrollo de Microsoft Word, desarrollaron el RTF original a mediados y finales de los 80. El primer lector y escritor de RTF enviado en 1987 como parte de Microsoft Word 3.0 para Macintosh, que implementó la especificación RTF versión 1.0. Todas las versiones posteriores de Microsoft Word para Macintosh, así como todas las versiones de Windows, pueden leer y escribir en formato RTF.     </p>
+        </div>
+        </div>
+     <br>
+    <br>
+</body>
 </html>
